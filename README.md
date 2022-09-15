@@ -41,6 +41,10 @@ Actions
         - counters for each section
     - Stat: retrieve updated counts from main, display catchphrase array
 
+Images attributed to...
+<a href="https://www.freepik.com/free-vector/cat-icons-collection_1046690.htm#query=cartoon%20cat%20head&position=1&from_view=search">Image by terdpongvector</a> on Freepik
+<a href="https://www.freepik.com/free-vector/set-clothes-accessories-man-woman-illustrations-garment-from-wardrobe-cartoon-pants-jeans-shirt-dress-isolated-white_20827890.htm#query=cartoon%20shirt&position=37&from_view=search">Image by pch.vector</a> on Freepik
+
 
 
 ## Additional considerations
