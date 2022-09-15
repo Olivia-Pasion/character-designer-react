@@ -5,12 +5,12 @@ import Character from '../Character/Character.js';
 import Stat from '../Stats/Stat.js';
 
 export default function Main() {
-  const [head, setHead] = useState()
+  const [head, setHead, setHeadCount, headCount] = useState('normal');
   return (
     <div className="main">
-      <Control />
-      <Character />
-      <Stat />
+      <Control head={head} setHead={setHead} setHeadCount={setHeadCount} headCount={headCount}/>
+      <Character head={head} />
+      <Stat headCount={headCount} />
     </div>
   );
 }
