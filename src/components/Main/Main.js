@@ -12,6 +12,7 @@ export default function Main() {
   const [middle, setMiddle] = useState('tshirt');
   const [middleCount, setMiddleCount] = useState(0);
   const [bottom, setBottom] = useState('jean');
+  const [bottomCount, setBottomCount] = useState(0);
   return (
     <div className="main">
       <Control className="control"
@@ -25,6 +26,8 @@ export default function Main() {
         setHeadCount={setHeadCount}
         middleCount={middleCount}
         setMiddleCount={setMiddleCount}
+        bottomCount={bottomCount}
+        setBottomCount={setBottomCount}
       />
       <Character className="character" 
         head={head}
@@ -34,6 +37,7 @@ export default function Main() {
       <Stat className="stat"
         headCount={headCount}
         middleCount={middleCount}  
+        bottomCount={bottomCount}
       />
     </div>
   );

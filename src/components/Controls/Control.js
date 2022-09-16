@@ -7,7 +7,8 @@ export default function Control({
   middle, setMiddle, 
   bottom, setBottom, 
   headCount, setHeadCount, 
-  middleCount, setMiddleCount
+  middleCount, setMiddleCount,
+  bottomCount, setBottomCount
 }) {
   return (
     <div className="control">
@@ -35,6 +36,7 @@ export default function Control({
       <div className="form-control">
         <select className="bottom" value={bottom} onChange={(e) => {
           setBottom(e.target.value);
+          setBottomCount(bottomCount + 1);
         }}>
           <option defaultChecked value="jean">Jeans</option>
           <option value="skirt">Skirt</option>
