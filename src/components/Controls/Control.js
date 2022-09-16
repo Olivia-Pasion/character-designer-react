@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import './Control.css';
 
 
@@ -8,8 +9,16 @@ export default function Control({
   bottom, setBottom, 
   headCount, setHeadCount, 
   middleCount, setMiddleCount,
-  bottomCount, setBottomCount
+  bottomCount, setBottomCount,
+  setCatchphrases
 }) {
+  const [newPhrase, setNewPhrase] = useState('');
+  const addCatchphrase = () => {
+    if (!newPhrase) return;
+    setCatchphrases((prevState) => {
+      return ([...prevState, newPhrase]);
+    });
+  };
   return (
     <div className="control">
       <div className="form-control">
@@ -42,6 +51,14 @@ export default function Control({
           <option value="skirt">Skirt</option>
           <option value="sweats">Sweats</option>
         </select>
+      </div>
+      <div className="form-control">
+        <input className='catchphrase' 
+          value={newPhrase} onChange={(e) => {
+            setNewPhrase(e.target.value);
+          }} 
+        />
+        <button onClick={addCatchphrase}>Add</button>
       </div>
     </div>
   );
