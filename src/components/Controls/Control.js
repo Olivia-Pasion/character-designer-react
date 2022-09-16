@@ -2,13 +2,14 @@ import React from 'react';
 import './Control.css';
 
 
-export default function Control({ head, setHead, middle, setMiddle, bottom, setBottom }) {
+export default function Control({ head, setHead, middle, setMiddle, bottom, setBottom, setHeadCount, headCount }) {
   return (
     <div className="control">
       <div className="form-control">
         <select className="head" value={head} 
           onChange={(e) => {
             setHead(e.target.value);
+            setHeadCount(headCount + 1);
           }}>
           <option value="normal">Normal</option>
           <option value="hat">Hat</option>
