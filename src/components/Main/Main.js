@@ -7,6 +7,7 @@ import './Main.css';
 export default function Main() {
   const [head, setHead] = useState('normal');
   const [middle, setMiddle] = useState('tshirt');
+  const [bottom, setBottom] = useState('jean');
   return (
     <div className="main">
       <Control 
@@ -14,10 +15,13 @@ export default function Main() {
         setHead={setHead} 
         middle={middle}
         setMiddle={setMiddle}
+        bottom={bottom}
+        setBottom={setBottom}
       />
       <Character className="character" 
         head={head}
-        middle={middle}  
+        middle={middle}
+        bottom={bottom}  
       />
     </div>
   );
