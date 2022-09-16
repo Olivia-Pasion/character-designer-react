@@ -8,8 +8,9 @@ import './Main.css';
 
 export default function Main() {
   const [head, setHead] = useState('normal');
-  const [middle, setMiddle] = useState('tshirt');
   const [headCount, setHeadCount] = useState(0);
+  const [middle, setMiddle] = useState('tshirt');
+  const [middleCount, setMiddleCount] = useState(0);
   const [bottom, setBottom] = useState('jean');
   return (
     <div className="main">
@@ -22,6 +23,8 @@ export default function Main() {
         setBottom={setBottom}
         headCount={headCount}
         setHeadCount={setHeadCount}
+        middleCount={middleCount}
+        setMiddleCount={setMiddleCount}
       />
       <Character className="character" 
         head={head}
@@ -29,7 +32,9 @@ export default function Main() {
         bottom={bottom}  
       />
       <Stat className="stat"
-        headCount={headCount}/>
+        headCount={headCount}
+        middleCount={middleCount}  
+      />
     </div>
   );
 }

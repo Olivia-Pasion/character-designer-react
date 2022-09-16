@@ -2,7 +2,13 @@ import React from 'react';
 import './Control.css';
 
 
-export default function Control({ head, setHead, middle, setMiddle, bottom, setBottom, setHeadCount, headCount }) {
+export default function Control({ 
+  head, setHead, 
+  middle, setMiddle, 
+  bottom, setBottom, 
+  headCount, setHeadCount, 
+  middleCount, setMiddleCount
+}) {
   return (
     <div className="control">
       <div className="form-control">
@@ -19,6 +25,7 @@ export default function Control({ head, setHead, middle, setMiddle, bottom, setB
       <div className="form-control">
         <select className="middle" value={middle} onChange={(e) => {
           setMiddle(e.target.value);
+          setMiddleCount(middleCount + 1);
         }}>
           <option defaultChecked value="tshirt">T-shirt</option>
           <option value="sweater">Sweater</option>
