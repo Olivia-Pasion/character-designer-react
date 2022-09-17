@@ -21,7 +21,7 @@ export default function Main() {
   const [catchphrases, setCatchphrases] = useState([]);
 
   return (
-    <div className="main">
+    <div className="main container">
       <Control className="control"
         head={head} 
         setHead={setHead} 
@@ -37,18 +37,18 @@ export default function Main() {
         setBottomCount={setBottomCount}
         setCatchphrases={setCatchphrases}
       />
-      <Character className="character" 
-        head={head}
-        middle={middle}
-        bottom={bottom}  
+      <Catchphrase className="catchphrases left"
+        catchphrases={catchphrases}
       />
-      <Stat className="stat"
+      <Stat className="stat left"
         headCount={headCount}
         middleCount={middleCount}  
         bottomCount={bottomCount}
       />
-      <Catchphrase className="catchphrase"
-        catchphrases={catchphrases}
+      <Character className="character right" 
+        head={head}
+        middle={middle}
+        bottom={bottom}  
       />
     </div>
   );

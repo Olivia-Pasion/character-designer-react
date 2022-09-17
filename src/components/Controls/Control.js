@@ -20,7 +20,7 @@ export default function Control({
     });
   };
   return (
-    <div className="control">
+    <div className="control left">
       <div className="form-control">
         <select className="head" value={head} 
           onChange={(e) => {

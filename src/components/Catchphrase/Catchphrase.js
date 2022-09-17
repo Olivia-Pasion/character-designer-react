@@ -1,8 +1,10 @@
 import React from 'react';
+import './Catchphrase.css';
 
 export default function Catchphrase({ catchphrases }) {
   return (
-    <ul className='catchphrases'>
+    <ul>
+      Catchphrases
       {catchphrases.map((c) => (
         <li className='catchphrase' key={c}>
           {c}
