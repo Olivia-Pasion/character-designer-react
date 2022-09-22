@@ -1,0 +1,10 @@
+.control {
+  width: 100%;
+  padding: 30px;
+}
+
+.form-control {
+  margin-top: 20px;
+  margin-left: 20px;
+  position: relative;
+}
